@@ -47,6 +47,10 @@ public class MentalistaController {
 	}
 
 	// creau un metode mapejat a la peticio home ("/") i que retorni la vista "joc"
+	@RequestMapping(path = "/")
+	public String getJocView() {
+		return "joc";
+	}
 	
 	
 	// feis un metode queque atengui a "/reinici" i
