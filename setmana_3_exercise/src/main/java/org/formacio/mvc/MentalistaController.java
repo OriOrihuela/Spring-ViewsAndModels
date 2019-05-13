@@ -55,6 +55,11 @@ public class MentalistaController {
 	
 	// feis un metode queque atengui a "/reinici" i
 	// invoqui al metode inicia() i llavors redireccioni a ("/")
+	@RequestMapping(path = "/reinici")
+	public String restart() {
+		inicia();
+		return "redirect:/";
+	}
 	
 	
 	// completeu el metode:
