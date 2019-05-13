@@ -40,6 +40,7 @@ public class MentalistaController {
 	}
 
 	// feis que aquest metode es cridi just creat el component
+	@PostConstruct
 	public void inicia() {
 		intents.clear();
 		numero = random.nextInt(10) + 1;
